@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow"
+    android:padding="16dp"
+    tools:context="org.geeksforgeeks.stopwatch.MainActivity">
+
+        <ProgressBar
+            android:id="@+id/circle"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="253dp"
+            android:layout_height="243dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/circle"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/circle_2"
+            android:rotation="90"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ProgressBar>
+
+        <Button
+            android:id="@+id/reset_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="280dp"
+            android:backgroundTint="@color/black"
+            android:elevation="10dp"
+            android:onClick="onClickReset"
+            app:cornerRadius="100dp"
+            app:icon="@android:drawable/ic_popup_sync"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="288dp"
+            android:layout_marginTop="280dp"
+            android:backgroundTint="#0B0A0A"
+            android:onClick="onClickStop"
+            android:shadowColor="#0E0E0E"
+            app:cornerRadius="100dp"
+            app:icon="@android:drawable/ic_popup_reminder"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+
+            android:id="@+id/start_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="280dp"
+            android:backgroundTint="@color/black"
+            android:onClick="onClickStart"
+            android:textSize="24sp"
+            app:cornerRadius="100dp"
+            app:icon="@android:drawable/ic_media_play"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+
+            android:id="@+id/start_button2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="280dp"
+            android:backgroundTint="@color/black"
+            android:onClick="onClickPause"
+            android:textSize="24sp"
+            app:cornerRadius="100dp"
+            app:icon="@android:drawable/ic_media_pause"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/time_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="125dp"
+            android:background="@drawable/myrect"
+            android:elevation="2dp"
+            android:textSize="34sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ListView
+            android:id="@+id/lv_vueltas"
+            android:layout_width="247dp"
+            android:layout_height="155dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="388dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
